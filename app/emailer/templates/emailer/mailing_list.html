@@ -31,9 +31,12 @@
                         <td>{{ object.period }}</td>
                         <td>{{ object.status }}</td>
                         <td>
+                            <a href="{% url 'emailer:mailing_send' object.pk %}" class="btn btn-sm btn-success">
+                                Отправить
+                            </a>
                             <a href="{% url 'emailer:mailing_delete' object.pk %}" class="btn btn-sm btn-danger">
-                            Удалить
-                        </a>
+                                Удалить
+                            </a>
                         </td>
                     </tr>
                 {% endfor %}
