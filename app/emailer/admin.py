@@ -15,4 +15,4 @@ class ClientAdmin(admin.ModelAdmin):
 
 @admin.register(Mailing)
 class MailingAdmin(admin.ModelAdmin):
-    list_display = ('name', 'start_time', 'end_time', 'period', 'status')
+    list_display = ('name', 'start_time', 'period', 'status')

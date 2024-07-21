@@ -5,7 +5,6 @@ from django.apps import apps
 class Mailing(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название рассылки')
     start_time = models.DateTimeField(verbose_name='Время начала отправки рассылки')
-    end_time = models.DateTimeField(verbose_name='Время окончания отправки рассылки')
 
     PERIOD_CHOICES = [
         ('daily', 'Раз в день'),
